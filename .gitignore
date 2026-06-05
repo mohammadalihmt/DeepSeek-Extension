@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+dist/
+build/
+*.egg-info/
+
+# Virtual environment
+venv/
+env/
+.env
+
+# PyInstaller
+*.spec
+*.exe
+*.dll
+*.pyd
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# node_modules (if any)
+node_modules/
+
+# token file (important: never commit your real token)
+server/token.txt
