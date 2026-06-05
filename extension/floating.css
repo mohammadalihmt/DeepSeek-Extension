@@ -1,8 +1,0 @@
-@keyframes fadeOut {
-    0% { opacity: 1; }
-    70% { opacity: 1; }
-    100% { opacity: 0; visibility: hidden; }
-}
-#deepseek-floating-window .floating-messages::-webkit-scrollbar { width: 6px; }
-#deepseek-floating-window .floating-messages::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 3px; }
-#deepseek-floating-window .floating-messages::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 3px; }
