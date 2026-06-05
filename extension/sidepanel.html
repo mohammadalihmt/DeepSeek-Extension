@@ -29,7 +29,7 @@
             -webkit-text-fill-color: transparent;
             margin: 0;
         }
-        .header h1 span{
+        .header h1 span {
             background: unset;
             -webkit-background-clip: none;
             -webkit-text-fill-color: white;
@@ -271,6 +271,43 @@
             margin-top: 10px;
             font-size: 0.9rem;
         }
+        .settings-content a {
+            color: #00d2ff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .settings-content a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .settings-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        .settings-link-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            padding: 10px 14px;
+            transition: background 0.2s;
+        }
+        .settings-link-item:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        .settings-link-item span:first-child {
+            font-size: 1.2rem;
+        }
+        .settings-link-item a {
+            font-weight: 600;
+            color: #00d2ff;
+        }
+        .settings-link-item a:hover {
+            color: #fff;
+        }
         .close-settings {
             position: absolute;
             top: 15px; right: 15px;
@@ -283,16 +320,6 @@
         }
         .close-settings:hover {
             color: #fff;
-        }
-        .close-settings {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: none;
-            border: none;
-            color: #888;
-            font-size: 1.5rem;
-            cursor: pointer;
         }
     </style>
 </head>
@@ -323,16 +350,25 @@
 </div>
 <div class="settings-panel" id="settingsPanel">
     <div class="settings-content">
-        <button class="close-settings" id="closeSettings">✕</button>
-        <h2>ℹ️ Info</h2>
-        <p>Uses local Python server.<br>Make sure <strong>DeepSeekServer.exe</strong> is running.
-            (or <strong>start_api.bat</strong>)</p>
-        <h2>💖 Support</h2>
-        <p>I hope I could help you.<br>To support me, you can follow my GitHub account <strong>@mohammadalihmt</strong> and ⭐ this project.</p>
-        <div class="support-note">
-            🐙 GitHub: <strong>@mohammadalihmt</strong>
+    <button class="close-settings" id="closeSettings">✕</button>
+    <h2>ℹ️ Info</h2>
+    <p>Uses local Python server.<br>Make sure <strong>DeepSeekServer.exe</strong> is running
+        (or <strong>start_api.bat</strong>).</p>
+    <h2>💖 Support</h2>
+    <p>I hope I could help you. To support me, you can follow my GitHub account and ⭐ this project.</p>
+    <div class="settings-links">
+        <div class="settings-link-item">
+            <span>🐙</span>
+            <span>GitHub Account:</span>
+            <a href="https://github.com/mohammadalihmt" target="_blank">@mohammadalihmt</a>
+        </div>
+        <div class="settings-link-item">
+            <span>⭐</span>
+            <span>Repository:</span>
+            <a href="https://github.com/mohammadalihmt/DeepSeek-Extension" target="_blank">DeepSeek-Extension</a>
         </div>
     </div>
+</div>
 </div>
 <script src="sidepanel.js"></script>
 </body>
